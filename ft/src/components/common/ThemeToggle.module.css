@@ -1,0 +1,22 @@
+.toggleBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleBtn:hover {
+    background-color: var(--surface-alt);
+    color: var(--primary);
+    transform: rotate(15deg);
+}
+
+:global(.dark) .toggleBtn:hover {
+    color: var(--accent);
+}

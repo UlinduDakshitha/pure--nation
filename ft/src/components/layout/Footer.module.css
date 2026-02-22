@@ -1,0 +1,125 @@
+.footer {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    padding-top: 4rem;
+    margin-top: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.logoIcon {
+    color: var(--primary);
+    width: 24px;
+    height: 24px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    max-width: 300px;
+}
+
+.links h4,
+.contact h4,
+.social h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links a {
+    color: var(--text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.links a:hover {
+    color: var(--primary);
+}
+
+.contact p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--surface-alt);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.socialIcons a:hover {
+    background-color: var(--primary);
+    color: var(--text-inverted);
+}
+
+.bottom {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+    background-color: var(--background);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}

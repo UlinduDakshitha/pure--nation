@@ -1,0 +1,187 @@
+.imageHeader {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-xl);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    width: 100%;
+    padding: 2rem;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.headerMeta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+    opacity: 0.9;
+}
+
+.headerMeta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.mainContent h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.mainContent p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.impactBox {
+    background-color: var(--primary-light);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+    border: 1px solid var(--primary);
+}
+
+.impactBox h3 {
+    font-size: 1.25rem;
+    color: var(--primary-hover);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.impactBox p {
+    margin-bottom: 0;
+    color: var(--text-primary);
+}
+
+.mapPlaceholder {
+    background-color: var(--surface-alt);
+    height: 300px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.sidebar .card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.detailList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.detailList li {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.icon {
+    color: var(--primary);
+    margin-top: 0.25rem;
+}
+
+.detailList strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.detailList p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.progressBar {
+    height: 6px;
+    background-color: var(--surface-alt);
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.successBtn {
+    background-color: var(--success) !important;
+    border-color: var(--success) !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.shareBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.shareBtn:hover {
+    color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+    .contentGrid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .imageHeader {
+        height: 300px;
+    }
+
+    .overlay h1 {
+        font-size: 1.75rem;
+    }
+}
